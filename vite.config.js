@@ -4,6 +4,7 @@ import babel from '@rolldown/plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/react-routing-day-13/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })

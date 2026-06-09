@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react-routing-day-13/">
       <div style={{ minHeight: '100vh', backgroundColor: '#0a192f' }}>
         <Navbar />
         <Routes>
