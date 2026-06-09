@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <BrowserRouter basename="/react-routing-day-13/">
+    <HashRouter>
       <div style={{ minHeight: '100vh', backgroundColor: '#0a192f' }}>
         <Navbar />
         <Routes>
@@ -15,7 +15,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
